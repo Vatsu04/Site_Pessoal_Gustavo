@@ -46,7 +46,7 @@ body{
 }
 
 section{
-    min-height: 100vh;
+    min-height: 30vh;
     padding: 1rem;
 }
 
@@ -196,7 +196,7 @@ header .navbar ul li a:hover{
 .about .row .info{
     flex: 1 1 48rem;
     padding: 2rem 1rem;
-    padding-left: 6rem;
+    padding-left: 13.5rem;
 }
 
 .about .row .info h3{
