@@ -162,7 +162,7 @@ header .navbar ul li a:hover{
     display: flex;
     justify-content: center;
     flex-flow: column;
-    padding: 0 15rem;
+    padding: 0 6rem;
 }
 
 .home h3{
@@ -189,7 +189,7 @@ header .navbar ul li a:hover{
     display: flex;
     justify-content: center;
     flex-flow: column;
-    padding: 0 8.5rem;
+    padding: 0 0rem;
 }
 
 .about .row{
@@ -197,7 +197,7 @@ header .navbar ul li a:hover{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 1rem 0;
+    padding: 1rem 0rem;
 }
 
 .about .row .info{
