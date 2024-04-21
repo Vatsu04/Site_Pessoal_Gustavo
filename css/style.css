@@ -185,14 +185,14 @@ header .navbar ul li a:hover{
     padding: 1rem 0;
 }
 
-.about{
+.sobre{
     display: flex;
     justify-content: center;
     flex-flow: column;
     padding: 0 0rem;
 }
 
-.about .row{
+.sobre .row{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -200,33 +200,33 @@ header .navbar ul li a:hover{
     padding: 1rem 0rem;
 }
 
-.about .row .info{
+.sobre .row .info{
     flex: 1 1 48rem;
     padding: 1rem 0rem;
     padding-left: 6rem;
 }
 
-.about .row .info h3{
+.sobre .row .info h3{
     font-size: 2rem;
     color:var(--pink);
     padding:1rem 0;
     font-weight: normal;
 } 
 
-.about .row .info h3 span{
+.sobre .row .info h3 span{
     color: #eee;
     padding: 0 .5rem;
 }
 
 
-.about .row .counter{
+.sobre .row .counter{
     flex: 1 1 48rem;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.about .row .counter .box{
+.sobre .row .counter .box{
     width: 20rem;
     background: #222;
     text-align: center;
@@ -234,12 +234,12 @@ header .navbar ul li a:hover{
     margin: 2rem;
 
 }
-.about .row .counter .box span{
+.sobre .row .counter .box span{
     font-size: 4rem;
     color:var(--pink);
 }
 
-.about .row .counter .box h3{
+.sobre .row .counter .box h3{
     font-size: 2rem;
     color: #fff;
 }
@@ -330,7 +330,7 @@ header .navbar ul li a:hover{
     transform: scale(1.2);
 }
 
-.contact .row{
+.contato .row{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -343,14 +343,14 @@ header .navbar ul li a:hover{
     padding-bottom: 0;
 }
 
-.contact .row form{
+.contato .row form{
     flex: 1 1 45rem;
     padding: 2rem;
     margin: 2rem;
     margin-bottom: 4rem;
 }
 
-.contact .row form .box{
+.contato .row form .box{
     padding: 1.5rem;
     margin: 1rem 0;
     background: #3333;
@@ -361,23 +361,23 @@ header .navbar ul li a:hover{
 
 }
 
-.contact .row form .box::placeholder{
+.contato .row form .box::placeholder{
     text-transform: capitalize;
 }
 
-.contact .row form .message{
+.contato .row form .message{
     height: 15rem;
     resize: none;
 }
 
-.contact .row .content .title{
+.contato .row .content .title{
     text-transform: uppercase;
     color: #fff;
     font-size: 3rem;
     padding-bottom: 2rem;
 }
 
-.contact .row .content .info h3{
+.contato .row .content .info h3{
     display: flex;
     align-items: center;
     font-size: 2rem;
@@ -386,7 +386,7 @@ header .navbar ul li a:hover{
     font-weight: normal;
 }
 
-.contact .row .content .info h3{
+.contato .row .content .info h3{
     padding-right: 1rem;
     color: var(--pink);
 }
@@ -438,13 +438,13 @@ header .navbar ul li a:hover{
         margin: 0 3rem;
     }
 
-    .about .row .counter .box{
+    .sobre .row .counter .box{
         width: 100%;
     }
     heading{
         margin: 0 3rem;
     }
-    .about .row .counter .box{
+    .sobre .row .counter .box{
         width: 100%;
     }
     .education .box-container .box{
