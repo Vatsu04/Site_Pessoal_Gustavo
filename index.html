@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/menu.css' rel='stylesheet'>
 </head>
 
 <header>
@@ -34,7 +35,7 @@
 <div id="menu" class="fas fa-bara"></div>
 
 <section class="home" id="home">
-    <br><br><br><br><br><br><br><br><br>
+    <br><br><br>
     <h3>Olá! Sejam bem-vindos !</h3>
     <h1> Eu sou <span>Gustavo Passos Tascheri</span></h1>
     <p>Comecei a estudar programação em 2020, e me apaixonei instantaneamente, sabia que era a área onde gostaria de me aprofundar e trabalhar 
@@ -63,7 +64,7 @@ Sistema Operacionais: Windows 10, Linux
 
 
 </section>
-
+<br><br>
 <section class="sobre" id="sobre">
     <h1 class="heading"> <span>Sobre</span> mim </h1>
 
@@ -240,13 +241,14 @@ Sistema Operacionais: Windows 10, Linux
 <script src="Javascript/script.js"></script>
 
 <div id="contato">
+    <button id="myButton6">Baixe meu CV!</button>
     <button  id="myButton1">Instagram</button>
     <button  id="myButton2">Github</button>
     
 
     <button  id="myButton4">Linkedin</button>
     <button id="myButton5">WhatsApp</button>
-
+    
 
 
 
@@ -268,8 +270,23 @@ location.href = "https://www.linkedin.com/notifications/?filter=all";
 };
 
 document.getElementById("myButton5").onclick = function () {
-location.href = "https://wa.me/5521985819889";
+    location.href = "Gustavo Passos Tascheri CV.pdf";
 };
+
+
+document.getElementById("myButton6").onclick = function () {
+    downloadFile("https://drive.google.com/file/d/198nqfsY1AYEK4VRqC4pobiovVORfC3-M/view?usp=sharing", "Gustavo Passos Tascheri CV.pdf");
+};
+
+function downloadFile(url, filename) {
+        const link = document.createElement('a');
+        link.href = url;
+        link.setAttribute('download', filename);
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    }
+
 </script>
 
 
