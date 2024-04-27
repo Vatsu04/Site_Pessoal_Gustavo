@@ -458,11 +458,9 @@ header .navbar ul li a:hover{
     } 
 }
 
-#myButton1,
-  #myButton2,
-  #myButton3,
-  #myButton4, #myButton5, #myButton6 {
+.botao {
   width: 100%;
+  height:30px;
   margin-bottom: 8px;
   }
   
@@ -475,20 +473,20 @@ header .navbar ul li a:hover{
     background: rgb(36,0,32);
   background: linear-gradient(90deg, rgba(36,0,32,1) 0%, rgba(185,21,184,1) 35%, rgba(255,141,0,1) 100%);
   ;
-  height:30px;
+ 
   }
   
   #myButton2{
     background: rgb(23,23,23);
   background: linear-gradient(90deg, rgba(23,23,23,1) 0%, rgba(19,19,19,1) 35%, rgba(32,32,32,1) 100%);
   ;
-  height:30px;
+ 
   color:white;
   }
   #myButton3{
     background-color: #00acee 
     ;
-  height:30px;
+
   margin-bottom: 8px;
   }
   
@@ -498,25 +496,30 @@ header .navbar ul li a:hover{
   }
 
   #myButton4{
-    background-color: #0072b1;
-    ;
-  height:30px;
+    background-color: #0072b1;;
+
   }
 
 
   #myButton5{
     background-color: 	#25D366;
-    height: 30px;
+   
     
   }
 
   #myButton6{
     background-color: white;
     color:black;
-    height:30px;
+   
+  }
+
+  #myButton7{
+    background-color: #EA4335;
+    color: black;
   }
   
-  #myButton1:hover,#myButton2:hover,#myButton3:hover,#myButton4:hover{
+  
+  .botao:hover{
     cursor: pointer;
   }
 
