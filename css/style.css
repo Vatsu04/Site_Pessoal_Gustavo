@@ -214,6 +214,7 @@ header .navbar ul li a:hover{
 } 
 
 .sobre .row .info h3 span{
+    
     color: #eee;
     padding: 0 .5rem;
 }
@@ -421,6 +422,14 @@ header .navbar ul li a:hover{
     }
     body{
         padding:0;
+    }
+    .sobre .row .info{
+        padding-left:4rem;
+    }
+    .sobre .row .info h3 span{
+    
+        color: #eee;
+        padding: 0rem;
     }
 }
 
