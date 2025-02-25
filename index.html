@@ -231,8 +231,8 @@
 
 <div class="row">
     <div class="content" style="text-align: center";>
-        <h3 class="title" style="color:white"  >Informações para Contato</h3>
-        <h3 class="title" style="color:white"  >Informações para Contato</h3>
+        <h3 class="title" style="color:white" lang="pt"  >Informações para Contato</h3>
+        <h3 class="title" style="color:white" lang="en" >Contact Information</h3>
 
         <div class="info">
             <h3 style="color:white" > <i class="fas fa-envelope"></i> gugatascheri@gmail.com </h3>
@@ -261,23 +261,25 @@
 
 <div id="contato">
     <button id="myButton6"  class="botao">Baixe meu CV!</button>
-    <button  id="myButton1" class="botao">Instagram</button>
-    <button  id="myButton2" class="botao">Github</button>
+    <button id="myButton1" class="botao">Instagram</button>
+    <button id="myButton2" class="botao">Github</button>
     
 
-    <button  id="myButton4" class="botao">Linkedin</button>
+    <button id="myButton4" class="botao">Linkedin</button>
     <button id="myButton5" class="botao">WhatsApp</button>
-    <button  id="myButton7"  class="botao">Me mande um email!</button>
-    
-
+    <button id="myButton7"  class="botao">Me mande um email!</button>
+    <button id="switch-lang" class="lang-switch" lang="en">Switch to Portuguese</button>
+    <button id="switch-lang" class="lang-switch" lang="pt">Mudar para Inglês</button>
 
 
   </div>
 
     
 </body>
+
+
 <script>
-    
+
 document.getElementById("myButton1").onclick = function() {
     location.href = "https://www.instagram.com/o_vatsu_g/";
 };
@@ -315,6 +317,25 @@ function downloadFile(url, filename) {
 </script>
 
 
+<script>
+    $(document).ready(function() {
+        // Initially hide all elements with lang="en"
+        $('[lang="en"]').hide();
 
+        // Add click event listener to buttons with class "lang-switch"
+        $('.lang-switch').click(function() {
+            // Toggle visibility of elements with lang="pt" and lang="en"
+            $('[lang="pt"]').toggle();
+            $('[lang="en"]').toggle();
+
+            // Update button text based on the current visible language
+            if ($('[lang="pt"]').is(':visible')) {
+                $('.lang-switch').text('Switch to English');
+            } else {
+                $('.lang-switch').text('Mudar para Português');
+            }
+        });
+    });
+</script>
 
 </html>
