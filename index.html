@@ -270,7 +270,6 @@
 
 <div id="contato">
     <button id="myButton6"  class="botao">Baixe meu CV!</button>
-    <button id="myButton1" class="botao">Instagram</button>
     <button id="myButton2" class="botao">Github</button>
     
 
@@ -289,9 +288,7 @@
 
 <script>
 
-document.getElementById("myButton1").onclick = function() {
-    location.href = "https://www.instagram.com/o_vatsu_g/";
-};
+
 document.getElementById("myButton2").onclick = function () {
   location.href = "https://github.com/Vatsu04";
 };
@@ -328,16 +325,13 @@ function downloadFile(url, filename) {
 
 <script>
     $(document).ready(function() {
-        // Initially hide all elements with lang="en"
         $('[lang="en"]').hide();
 
-        // Add click event listener to buttons with class "lang-switch"
         $('.lang-switch').click(function() {
-            // Toggle visibility of elements with lang="pt" and lang="en"
+
             $('[lang="pt"]').toggle();
             $('[lang="en"]').toggle();
 
-            // Update button text based on the current visible language
             if ($('[lang="pt"]').is(':visible')) {
                 $('.lang-switch').text('Mudar para Inglês');
             } else {
